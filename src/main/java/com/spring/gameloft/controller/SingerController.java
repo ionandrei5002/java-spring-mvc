@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @RestController
@@ -18,7 +19,8 @@ public class SingerController {
     public List<Singer> getAllSingers() {
         List<Singer> allSingers = singerService.getAllSingers();
         System.out.println("Getting all singers");
-        return allSingers;
+        throw new IllegalArgumentException("Not Found");
+//        return allSingers;
     }
 
     @GetMapping("/id")
@@ -57,5 +59,10 @@ public class SingerController {
     {
         Singer singer = singerService.getSinger(id);
         singerService.delete(id);
+    }
+
+    @ExceptionHandler(value = RuntimeException.class)
+    public void notFound(HttpServletResponse response) {
+        response.setStatus(HttpStatus.BAD_REQUEST.value());
     }
 }

@@ -10,9 +10,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/gameloft/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/gameloft/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/spring/gameloft/controller/SingerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/spring/gameloft/controller/SingerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/mvc-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/mvc-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/gameloft/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/gameloft/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/gameloft/controller/SingerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/gameloft/controller/SingerController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +161,7 @@
       <updated>1571908640333</updated>
       <workItem from="1571908643489" duration="1824000" />
       <workItem from="1571910477241" duration="137000" />
-      <workItem from="1571910626228" duration="17530000" />
+      <workItem from="1571910626228" duration="18023000" />
     </task>
     <servers />
   </component>
