@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
@@ -42,6 +43,13 @@ public class WebConfig implements WebMvcConfigurer {
     }
     @Bean
     public CommonsMultipartResolver multipartResolver() {
-        return new CommonsMultipartResolver();
+        CommonsMultipartResolver resolver = new CommonsMultipartResolver();
+        resolver.setMaxUploadSize(1024);
+        return resolver;
     }
+//    @Bean
+//    public StandardServletMultipartResolver multipartResolver() {
+//        StandardServletMultipartResolver resolver = new StandardServletMultipartResolver();
+//        return resolver;
+//    }
 }
